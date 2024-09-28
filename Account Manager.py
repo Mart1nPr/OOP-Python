@@ -1,9 +1,9 @@
-#This version of the account manager actually works!
-#Feel free to test it out!
+# This version of the account manager actually works!
+# Feel free to test it out!
 
 import time
 
-#Stored data
+# Stored data
 user_data = []
 
 #User data storer
@@ -61,7 +61,7 @@ def shut_down():
         print("Closed")
         exit()
 
-#Main   
+# Main   
 while True:
     print()
     user_registration_input = input("Do you want to register? (Y/N), Close the program with (Q): ")
