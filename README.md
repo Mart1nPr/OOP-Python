@@ -1,1 +1,2 @@
-## Püütoni harjutamise scriptid pandud hoiule.
+## Python
+Tunni tööd ja ise tehtud püütoni scriptid
