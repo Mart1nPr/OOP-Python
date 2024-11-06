@@ -259,22 +259,33 @@ class Einstein(Human):
         super().__init__(name, age, height)
         self.iq = iq
     def EinsteinData(self):
-        print(f"{self.name} {self.age} {self.height} {self.iq}")
+        print("About Einsetin:")
+        print(f"  Name: {self.name}")
+        print(f"  Age: {self.age}")
+        print(f"  Height: {self.height}")
+        print(f"  IQ: {self.iq}")
 class Alex(Human):
     def __init__(self, name, age, height, is_smart):
         super().__init__(name, age, height)
         self.is_smart = is_smart
     def AlexData(self):
-        print(f"{self.name} {self.age} {self.height} {self.is_smart}")
+        print("About Alex:")
+        print(f"  Name: {self.name}")
+        print(f"  Age: {self.age}")
+        print(f"  Height: {self.height}")
 class Newton(Human):
     def __init__(self, name, age, height, formula):
         super().__init__(name, age, height)
         self.formula = formula
     def NewtonData(self):
-        print(f"{self.name} {self.age} {self.height} {self.formula}")
+        print("About Einsetin:")
+        print(f"  Name: {self.name}")
+        print(f"  Age: {self.age}")
+        print(f"  Height: {self.height}")
+        print(f"  Formula: {self.formula}")
 
 einstein = Einstein("Albert", 79, 170, 145)
-alex = Alex("Alex", 17, 178, "wdadasd")
+alex = Alex("Alex", 17, 178, "is very smart guy")
 newton = Newton("Newton", 80, 170, "formula")
 
 print()
