@@ -294,3 +294,35 @@ print("Human")
 einstein.EinsteinData()
 alex.AlexData()
 newton.NewtonData()
+
+# Human class2
+
+class human:
+    def __init__(self, name, age, IDnumber , salery):
+        self.name = name
+        self.age = age
+        self.IDnumber = IDnumber
+        self.salery = salery
+class boy(human):
+    def __init__(self, name, age, IDnumber, salery, bonus):
+        super().__init__(name, age, IDnumber, salery)
+        self.bonus = bonus
+    def totalsalery(self):
+        totalsalery = self.salery + self.bonus
+        print(f"{self.name}: ",totalsalery)
+class girl(human):
+    def __init__(self, name, age, IDnumber, salery, tips):
+        super().__init__(name, age, IDnumber, salery)
+        self.tips = tips
+    def totalsalery(self):
+        totalsalery = self.salery + self.tips
+        print(f"{self.name}: ",totalsalery)
+
+Boy  =  boy("Arnold", 19, 5052280226, 2500, 100)
+Girl = girl("Anna", 20, 6052280236, 1240, 50)
+
+print()
+print("Human 2")
+
+Boy.totalsalery()
+Girl.totalsalery()
