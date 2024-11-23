@@ -1,2 +1,2 @@
-## Python
-Tunni tööd ja ise tehtud püütoni scriptid
+## OOP Python
+Objektorienteeritud programmeerimis tööd püütonis.
