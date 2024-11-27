@@ -15,9 +15,10 @@ class Room:
 
 # Items in the room
 item1 = Room("Computers", 2024, "Microsoft", "Good")
-item2 = Room("Monitors", 2015, "HP", "Old")
-item3 = Room("Keyboards", 1999, "Dell", "Dirty")
-item5 = Room("Mouse", 1999, "Hp", "Okay")
+item2 = Room("Monitors", 2024, "HP", "Good")
+item3 = Room("Keyboards", 2004, "Dell", "Dirty")
+item4 = Room("Mouses", 2004, "HP", "Okay")
+item5 = Room("Chairs", 2016, "Ikea", "Broken")
 
 # Prints items info
 print(item1.details())
