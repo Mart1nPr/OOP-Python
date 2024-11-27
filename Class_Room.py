@@ -17,6 +17,11 @@ class Room:
 item1 = Room("Computers", 2024, "Microsoft", "Good")
 item2 = Room("Monitors", 2015, "HP", "Old")
 item3 = Room("Keyboards", 1999, "Dell", "Dirty")
+item5 = Room("Mouse", 1999, "Hp", "Okay")
 
 # Prints items info
 print(item1.details())
+print(item2.details())
+print(item3.details())
+print(item4.details())
+print(item5.details())
