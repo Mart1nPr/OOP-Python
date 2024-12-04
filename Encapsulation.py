@@ -1,5 +1,6 @@
 # Encapsulation
 
+# ----Cars class----
 class Cars:
     def __init__(self, brand_name, color, speed):
         self.brand_name = brand_name
@@ -23,7 +24,7 @@ toyota.details()
 
 print() # Space
 
-# Exercise
+# ----Person class----
 class Person:
     def __init__(self, name, age):
         self.__name = name # Can't change the name
@@ -46,9 +47,31 @@ print("Old information")
 David.personalData()
 David.studentData()
 
+print() # Space
+
 David.__name = "John" # Name change
 David.__age = 420 # Age change
 David.__gpa = 101 # Gpa change
 print("New information")
 David.personalData()
 David.studentData()
+
+print() # Space
+
+# ----Rice class----
+class Rice_Price:
+    def __init__(self, company_name, price):
+        self.company_name = company_name
+        self.__final_price = price +price * 0.1
+        self.price = price
+    
+    def set_final_price(self, discount):
+        self.discount = discount
+        self.__final_price = self.__final_price - self.__final_price*(self.discount/100)
+    
+    def get_final_price(self):
+        return self.__final_price
+
+rice = Rice_Price("ABC", 5) # Company name & price
+rice.set_final_price(20) # Procentage of discount %
+print("Discount price: ",rice.get_final_price())
