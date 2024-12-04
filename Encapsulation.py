@@ -32,9 +32,21 @@ class Person:
     def personalData(self):
         print(f"Name: {self.__name} \n Age: {self.__age}")
 
+class Student(Person):
+    def __init__(self, name, age, gpa):
+        super().__init__(name, age)
+        self.__gpa = gpa # Can't change the gpa
+    def studentData(self):
+        print(f"Name: {self.__name} \n Age: {self.__age} \n GPA: {self.__gpa}")
+
+
 David = Person("David", 69)
+David = Student("David", 69, 100)
 print("Old information")
 David.personalData()
+David.studentData()
+
 David.__name = "John" # Name change
 David.__age = 420 # Age change
+David.__gpa = 101 # Gpa change
 David.personalData()
