@@ -140,3 +140,36 @@ Worker.get_status()
 Worker.update_salery(5000)
 Worker.promote("Senior-SoftwareDeveloper", 5000)
 Worker.get_status()
+
+print() # Space
+
+# ----Bank_account----
+class Bank_account:
+    def __init__(self, account_number, initial_balance):
+        self.account_number = account_number
+        self.initial_balance = initial_balance
+    def deposit(self, amount):
+        self.amount = amount
+        if self.amount > 0:
+            self.__balanace += self.amount
+            print(f"Your balance has now been updated {self.__balance}")
+        else:
+            print("Your account must be positive")
+    def withdrawl(self, amount):
+        self.amount = amount
+        if self.__balance < self.amount:
+            print("You do not have sufficiant amount")
+        elif self.amount <= 0:
+            print("Your amount must be positive")
+        else:
+            self.__balance -= self.amount
+            print(f"Your balance has been updated {self.__balance}")
+        def get_balance(self):
+            return self.__balance
+        def get_account_number(self):
+            return self.__account_number
+
+account = Bank_account(12345678, 1000)
+account.deposit(500)
+account.withdrawl(500)
+print(account.get_balance())
