@@ -173,3 +173,24 @@ account = Bank_account(12345678, 1000)
 account.deposit(500)
 account.withdrawl(500)
 print(account.get_balance())
+
+print() # Space
+
+# ---Shapes classes----
+# Duck typing
+
+class Triangle:
+    def draw(self):
+        print("Drawing a triangle with red color")
+class Rectangle:
+    def draw(self):
+        print("Drawing a rectangle with blue color")
+class Square:
+    def draw(self):
+        print("Drawing a square with green color")
+class Circle:
+    def draw(self):
+        print("Drawing a circle with white color")
+
+def drew_shape(shape):
+    pass
